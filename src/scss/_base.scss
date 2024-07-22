@@ -13,7 +13,7 @@ main#main{
     display: grid;
     place-content: center;
     background-color: var(--clr-light-pink);
-    background-image:url('./../../assets/images/background-pattern-mobile.svg');
+    background-image:url('https://areactdeveloper.github.io/Faq-accessibility-Scss/assets/images/background-pattern-mobile.svg');
     background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@ main#main{
     padding: var(--space-large);
 
     @media (min-width:900px){
-        background-image:url('./../../assets/images/background-pattern-desktop.svg');
+        background-image:url('https://areactdeveloper.github.io/Faq-accessibility-Scss/assets/images/background-pattern-desktop.svg');
         background-position: top center;
         background-size: contain 20;
         background-repeat: no-repeat;
