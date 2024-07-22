@@ -1,14 +1,24 @@
 var img1 = './../assets/images/icon-plus.svg';
 var img2 = './../assets/images/icon-minus.svg';
-document.querySelectorAll('#toggleAnswer').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const answer = btn.closest('.faq-card__item').querySelector('p');
-        answer.classList.toggle('display-none');
-        const img = btn.querySelector('img');
-        if (answer.classList.contains('display-none')) {
-            img.src = img1;
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('button[id="toggleAnswer"]').forEach((button, index) => {
+      const contentId = `faq-${index + 1}-answer`;
+      const content = document.getElementById(contentId);
+      
+      button.addEventListener('click', () => {
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        
+        if (isExpanded) {
+          button.setAttribute('aria-expanded', 'false');
+          content.classList.add('display-none');
+          button.querySelector('img').src = './assets/images/icon-plus.svg'; // Change icon to plus
         } else {
-            img.src = img2;
+          button.setAttribute('aria-expanded', 'true');
+          content.classList.remove('display-none');
+          button.querySelector('img').src = './assets/images/icon-minus.svg'; // Change icon to minus
         }
+      });
     });
-});
+  });
+  

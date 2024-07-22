@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <title>Frontend Mentor | FAQ accordion</title>
+  <title>Frontend Mentor | FAQ Accordion</title>
   <script src="./dist/app.js" defer></script>
   <link rel="stylesheet" href="./dist/styles.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -17,67 +17,75 @@
 </head>
 <body>
 
-
   <main id="main">
     <div class="faq-card">
       <div class="faq-card__head">
-        <img src="./assets/images/icon-star.svg" alt="">
+        <img src="./assets/images/icon-star.svg" alt="Star icon">
         <h1>FAQs</h1>
       </div>
-      <div class="faq-card__item">
+      
+      <div class="faq-card__item" role="region" aria-labelledby="faq-1-heading">
         <div class="faq-card__item__inner">
-          <h3>
+          <h3 id="faq-1-heading">
             What is Frontend Mentor, and how will it help me?
           </h3>
-          <button id="toggleAnswer"><img src="./assets/images/icon-plus.svg" alt=""></button>
+          <button id="toggleAnswer" aria-expanded="false" aria-controls="faq-1-answer">
+            <img src="./assets/images/icon-plus.svg" alt="Expand answer">
+          </button>
         </div>
-        <p class="display-none">
+        <p id="faq-1-answer" class="display-none">
           Frontend Mentor offers realistic coding challenges to help developers improve their 
           frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
           all levels and ideal for portfolio building.        
         </p>
       </div>
-      
-      <div class="faq-card__item">
+
+      <div class="faq-card__item" role="region" aria-labelledby="faq-2-heading">
         <div class="faq-card__item__inner">
-          <h3>
+          <h3 id="faq-2-heading">
             Is Frontend Mentor free?
           </h3>
-          <button id="toggleAnswer" href="#"><img src="./assets/images/icon-plus.svg" alt=""></button>
+          <button id="toggleAnswer" aria-expanded="false" aria-controls="faq-2-answer">
+            <img src="./assets/images/icon-plus.svg" alt="Expand answer">
+          </button>
         </div>
-        <p class="display-none">
+        <p id="faq-2-answer" class="display-none">
           Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
           option providing access to a range of projects suitable for all skill levels.
-                </p>
+        </p>
       </div>
 
-      <div class="faq-card__item">
+      <div class="faq-card__item" role="region" aria-labelledby="faq-3-heading">
         <div class="faq-card__item__inner">
-          <h3>
+          <h3 id="faq-3-heading">
             Can I use Frontend Mentor projects in my portfolio?
           </h3>
-          <button id="toggleAnswer" href="#"><img src="./assets/images/icon-plus.svg" alt=""></button>
+          <button id="toggleAnswer" aria-expanded="false" aria-controls="faq-3-answer">
+            <img src="./assets/images/icon-plus.svg" alt="Expand answer">
+          </button>
         </div>
-        <p class="display-none">
+        <p id="faq-3-answer" class="display-none">
           Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
           way to showcase your skills to potential employers!
-                </p>
+        </p>
       </div>
 
-      <div class="faq-card__item">
+      <div class="faq-card__item" role="region" aria-labelledby="faq-4-heading">
         <div class="faq-card__item__inner">
-          <h3>
+          <h3 id="faq-4-heading">
             How can I get help if I'm stuck on a Frontend Mentor challenge?
           </h3>
-          <button id="toggleAnswer" href="#"><img src="./assets/images/icon-plus.svg" alt=""></button>
+          <button id="toggleAnswer" aria-expanded="false" aria-controls="faq-4-answer">
+            <img src="./assets/images/icon-plus.svg" alt="Expand answer">
+          </button>
         </div>
-        <p class="display-none">
+        <p id="faq-4-answer" class="display-none">
           The best place to get help is inside Frontend Mentor's Discord community. There's a help 
           channel where you can ask questions and seek support from other community members.
-                </p>
+        </p>
       </div>
     </div>
   </main>
-  
+
 </body>
 </html>
