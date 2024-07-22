@@ -1,0 +1,35 @@
+/* Eric Meyer’s Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a consistent base font size */
+  html {
+    font-size: 100%;
+  }
+  
+
+  
+  /* Remove list styles */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove link underlines */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Ensure headings are not affected by base font size */
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  button{
+    all: unset;
+    cursor: pointer;
+  }

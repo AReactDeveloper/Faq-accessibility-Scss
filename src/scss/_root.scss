@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    /* Layout */
+    --mobile-width: 23.4375rem; /* 375px  */
+    --tablet-width: 48rem;      /* 768px  */
+    --desktop-width: 90rem;    /* 1440px  */
+  
+    /* Colors */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-pink: hsl(275, 100%, 97%);
+    --clr-grayish-purple: hsl(292, 16%, 49%);
+    --clr-dark-purple: hsl(292, 42%, 14%);
+    --clr-dark-gray: hsl(0, 0%, 30%);
+    --clr-light-gray: hsl(0, 0%, 90%);
+    --clr-accent: hsl(150, 100%, 75%); /* Example accent color */
+  
+    /* Typography */
+    --ff-body: 'Work Sans', sans-serif;
+    --fw-normal: 400;
+    --fw-medium: 600;
+    --fw-bold: 700;
+    --fs-body: 1rem;  /* 16px */
+    --fs-heading: 1.5rem; /* 24px */
+    --lh-body: 1.5; /* Line height for body text */
+    --lh-heading: 1.3; /* Line height for headings */
+  
+    /* Spacing */
+    --space-small: 0.5rem;  /* 8px */
+    --space-medium: 1rem;   /* 16px*/
+    --space-large: 1.5rem;  /* 24px*/
+    --space-xlarge: 2rem;   /* 32px*/
+  
+    /* Borders */
+    --border-radius-small: 0.25rem; /* 4px */
+    --border-radius-medium: 0.5rem; /* 8px */
+    --border-radius-xmedium: 0.6rem; /* 8px */
+    --border-radius-large: 0.75rem; /* 12px */
+    --border-color: hsl(0, 0%, 80%);
+  
+    /* Shadows */
+    --shadow-large: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); /* 8px */
+  }
+  
